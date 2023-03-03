@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: url(./img/osnova2.png);
+}
+.theme{
+    width: 185px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.switch{
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+.switch input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #7A7A7A;
+    transition: .4s;
+}
+.slider::before{
+    position: absolute;
+    content: url(./img/white.svg);
+    width: 20.5px;
+    height: 20px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider{
+    background-color: #b1b1b1;
+}
+input:checked + .slider::before{
+    content: url(./img/dark.svg);
+    transform: translateX(20px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round::before{
+    border-radius: 50%;
+}
+/* header{
+    width: 1440px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 175px;
+} */
+.text-heading{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+}
+.line-heading{
+    width: 536px;
+}
+.birthday{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.birthday-heading{
+    font-size: 16px;
+}
+.fa-search{
+    background-image: url(./img/search.svg);
+    cursor: pointer;
+}
+.yearbirth{
+    width: 215px;
+    height: 35px;
+    position: relative;
+}
+section{
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container{
+    width: 1090px;
+    height: 3202px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.yearbirth .fa-search{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 0;
+}
+#year_birth{
+    width: 215px;
+    height: 35px;
+    background: #D7D7D7;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 10px 45px 10px 10px;
+    gap: 10px;
+    border: 2px solid #d7d7d7;
+    border-radius: 20px;
+    /* margin-left: 257px; */
+}
+.birth_result{
+    color: #039900;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
