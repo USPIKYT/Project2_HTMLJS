@@ -7,6 +7,8 @@ body{
     padding: 0;
     font-family: 'Montserrat Alternates', sans-serif;
     background-image: url(./img/osnova2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -195,4 +197,352 @@ section{
     flex: 1 1 auto;
     padding: 15px;
     overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SWITCH SECTION*/
+
+.switch{
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+.switch input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #7A7A7A;
+    transition: .4s;
+}
+.slider::before{
+    position: absolute;
+    content: url(./img/white.svg);
+    width: 20.5px;
+    height: 20px;
+    background-color: white;
+    transition: .4s;
+}
+input:checked + .slider{
+    background-color: #b1b1b1;
+}
+input:checked + .slider::before{
+    content: url(./img/dark.svg);
+    transform: translateX(20px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round::before{
+    border-radius: 50%;
+}
+
+
+
+
+/* HEADER SECTION */
+
+.header {
+    background-color: #FFF;
+    align-items: center;
+    display: flex;
+    height: 80px;
+}
+
+.header-text {
+    display: flex;
+    margin-left: 51px;
+}
+
+
+.header-text-span {
+    margin-left: 6px;
+}
+
+
+
+.dropbtn {
+    background-color: rgba(0,0,0,0);
+    color: #000;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    margin-left: 108px;
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    min-width: 160px;
+}
+
+
+.dropdown-content a {
+    height: 35px;
+    width: 160px;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #F1F1F1F1}
+
+
+.show {display:block;}
+
+.first-dropdown-a {
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.second-dropdown-a {
+    padding-left: 47px;
+    padding-top: 10px;
+}
+
+.third-dropdown-a {
+    padding-left: 26px;
+    padding-top: 10px;
+}
+
+
+.arrow-img {
+    margin-left: 8px;
+    margin-top: 5px;
+    content: url(./img/arrow.svg);
+}
+
+.arrow-img:hover {
+    cursor: pointer;
+}
+
+.box {
+    margin-left: 108px;
+    display: flex;
+}
+
+.our-team-heading-header {
+    margin-left: 66px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.contacts-heading-header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.Congratulation-box {
+    display: flex;
+    position: absolute;
+    left: 1440px;
+}
+
+.first-header-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 161px;
+}
+
+.contacts-heading-header {
+    margin-left: 66px;
+}
+
+.our-team-heading-header:hover {
+    cursor: pointer;
+}
+
+.contacts-heading-header {
+    cursor: pointer;
+}
+
+.header-text {
+    cursor: default;
+}
+
+body {
+    background: url('/img/background.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN SECTION  */
+
+.mainbox {
+    background-color: #FFF;
+    width: 1453px;
+    height: 3202px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER  */
+
+.footer-box {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 220px;
+}
+
+.footer-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+}
+
+.p-contacts-box {
+    width: 260px;
+}
+
+.email-input_box {
+    padding-top: 37px;
+}
+
+
+.email-input {
+    box-shadow: none;
+    appearance: none;
+    color: #000;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    border: none;
+    outline: none;
+    width: 230px;
+    height: 40px;
+    border: none;
+    padding-left: 11px;
+    background: #D7D7D7;
+    border-radius: 19px;
+}
+
+.input_placeholder {
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #7E7E7E;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: block;
+    position: absolute;
+    left: 1489px;
+    top: 3379px;
+}
+   
+
+.input_button {
+    margin-left: 34px;
+    position: absolute;
+    left: 1489px;
+    top: 3379px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    background: #000;
+    width: 132px;
+    height: 40px;
+    border-radius: 19px;
+}
+
+.input_button:hover {
+    cursor: pointer;
+}
+
+.email-input:focus ~ .input_placeholder,
+.email-input:valid ~ .input_placeholder{
+    opacity: 0;
+}
+
+.footer-box {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.footer-p:hover {
+    cursor: default;
+}
+
+.input-footer-p {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 7px;
+    color: #000;
+    padding-top: 18px;
+
+}
+
+.dropdown-content  {
+    border: solid 1px black;
+    border-top: 0;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.third-dropdown-a {
+    border-radius: 0px 0px 20px 20px;
 }
