@@ -1,4 +1,4 @@
-let input = document.querySelector("#year_birth")
+let input = document.querySelector(".year_birth")
 let button = document.querySelector(".fa-search")
 let result = document.querySelector(".birth_result")
 button.addEventListener("click", function(){
